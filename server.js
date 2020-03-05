@@ -10,10 +10,6 @@ app.use(express.static("public"))
 require("./route/apiroute")(app);
 require("./route/htmlroute")(app);
 
-// app.get("/", function(req, res) {
-//     res.sendFile(path.join(__dirname, "index.html"));
-//   });
-
 app.listen(PORT, function(){
     console.log("listening on PORT: " + PORT)
 })
